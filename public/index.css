@@ -91,7 +91,7 @@ header{
     margin-top: 10px;
     max-width: 330px;
     max-height: 84px;
-  }
+}
 
 .fundo img {
     width: 216px;
@@ -103,7 +103,6 @@ header{
 .titulo{
     display: flex;
     align-items: center;
-
     width: 100%;
     max-width: 940px;
     margin: 0 auto 50px;
@@ -111,8 +110,8 @@ header{
 
 .titulo h1{
     width: 100%;
-    text-align: left;
-    font-size: 24px;
+    text-align: center;
+    font-size: 36px;
     font-weight: bold;
 }
 

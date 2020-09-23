@@ -1,0 +1,53 @@
+{% extends "layout.njk" %}
+
+{% block content%}
+
+    <div class="fundo">
+        <div class="texto">
+            <h1>As melhores receitas</h1>
+            <p>Aprenda a construir os melhores pratos <br> com receitas criadas por profissionais <br> do mundo inteiro.</p>
+        </div>
+
+        <div id="wrapper">
+            <img src="/assets/chef.png" alt="Chefinho">
+        </div>
+    </div>
+
+    <div class="titulo">
+        <h1>Mais acessadas</h1>
+    </div>
+
+    <section class="cards">
+
+        {% for item in items %}
+            <div class="card" id="">
+                <div class="card__image-container">
+                    <img src="{{item.image}}" alt="imagem de {{item.title}}">
+                </div>
+                <div class="card__content">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="card__info">
+                    <p>por {{item.author}}</p>
+                </div>
+            </div>
+        {% endfor %}
+
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe> <!--Tras algo de fora, outro html-->
+            </div>
+
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    {% block head%}
+        <title>FoodFly</title>
+        <link rel="stylesheet" href="/index.css">
+    {% endblock %}
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/"> <img src="/assets/logo.png" alt="Logo FoodFly"></a>
+        </div>
+    
+        <div class="links">
+            <a href="/about">Sobre</a>
+            <a href="/recipes">Receitas</a>
+        </div>
+    
+    </header>
+
+    {% block content %}{% endblock %}
+
+
+
+</body>
+
+</html>

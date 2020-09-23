@@ -1,0 +1,23 @@
+{
+  "name": "foodfly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matheus-souza-araujo/FoodFly.git"
+  },
+  "author": "Matheus de Souza Araujo",
+  "license": "ISC",
+  "homepage": "https://github.com/Matheus-souza-araujo/FoodFly#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

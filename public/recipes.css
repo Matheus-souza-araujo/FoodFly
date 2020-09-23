@@ -54,6 +54,10 @@ header{
 /* ===Body=== */
 
 /* ===cards=== */
+
+.cardr{
+    cursor: pointer;
+}
 .cards{
     max-width: 940px;
     margin:0 auto;/*alinha ao meio*/
