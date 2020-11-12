@@ -25,3 +25,13 @@ for (let i=0; i < card.length; i++) {
         console.log('apertei')
     })
 }
+
+// ===Para fazer página atual ficar selectionada ===
+const currentPage= location.pathname
+const menuItens = document.querySelectorAll("header .links a")
+
+for (item of menuItens){
+    if(currentPage.includes(item.getAttribute("href"))){
+        item.classList.add("active")
+    }
+}

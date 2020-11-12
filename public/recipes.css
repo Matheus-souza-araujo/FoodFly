@@ -51,6 +51,12 @@ header{
     transition: color 200ms;
 }
 
+.links a.active{
+    font-weight: bold;
+    color: black;
+}
+
+
 /* ===Body=== */
 
 /* ===cards=== */

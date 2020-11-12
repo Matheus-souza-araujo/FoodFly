@@ -1,0 +1,33 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+:root {
+    --hearder-color: #111111 ;
+  }
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--hearder-color);
+    padding: 40px
+}
+
+.logo img{
+    height: 26.9px;
+    width: 90.6px;
+    margin-left: 231px;
+}
+
+body {
+    background-color:rgb(241, 235, 235) ;
+}

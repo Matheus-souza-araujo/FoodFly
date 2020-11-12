@@ -1,11 +1,15 @@
-{% extends "layout.njk" %}
+{% extends "layoutUsers.njk" %}
 
 {% block content%}
 
     <div class="fundo">
         <div class="texto">
             <h1>As melhores receitas</h1>
-            <p>Aprenda a construir os melhores pratos <br> com receitas criadas por profissionais <br> do mundo inteiro.</p>
+            <p>Aprenda a construir os melhores pratos
+                <br>
+                com receitas criadas por profissionais
+                <br>
+                do mundo inteiro.</p>
         </div>
 
         <div id="wrapper">
@@ -28,11 +32,11 @@
                     <p>{{item.title}}</p>
                 </div>
                 <div class="card__info">
-                    <p>por {{item.author}}</p>
+                    <p>por
+                        {{item.author}}</p>
                 </div>
             </div>
         {% endfor %}
-
 
     </section>
 
@@ -43,7 +47,8 @@
             </a>
 
             <div class="modal-content">
-                <iframe src="" frameborder="0"></iframe> <!--Tras algo de fora, outro html-->
+                <iframe src="" frameborder="0"></iframe>
+                <!--Tras algo de fora, outro html-->
             </div>
 
         </div>

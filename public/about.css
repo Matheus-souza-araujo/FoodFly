@@ -29,6 +29,7 @@ header{
     margin: 30px auto 30px;
 }
 
+
 .logo img{
     margin-right: 122.4px;
 }
@@ -49,6 +50,11 @@ header{
     font-weight: 900;
     color: #000000;
     transition: color 200ms;
+}
+
+.links a.active{
+    font-weight: bold;
+    color: black;
 }
 
 
