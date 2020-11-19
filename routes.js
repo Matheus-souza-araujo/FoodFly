@@ -2,29 +2,15 @@
 const express = require('express')
 const routes = express.Router() //torna nossa variavel responsavél pelas rotas
 const recipes = require('./controllers/admin')
+const users = require('./controllers/users')
 //rotas usuário normal
 routes.get('/',function(req, res){
     return res.redirect('/users')
 })
-routes.get('/users', function(req, res){
-    return res.render("users/initial")
-})
-routes.get("/users/about", function(req, res){
-    return res.render("users/about")
-})
-routes.get("/users/recipes", function(req, res){
-    return res.render("users/recipes")
-})
-routes.get("/users/preparation/:index", function(req,res) {
-    const recipeIndex = req.params.index
-
-    if (!receita[recipeIndex]) {
-        return res.render('not-found')
-    }
-    return res.render('preparation', { items: receita[recipeIndex]})
-
-
-})
+routes.get('/users', users.index)
+routes.get("/users/about", users.about)
+routes.get("/users/recipes", users.recipes)
+routes.get("/users/preparation/:id", users.preparation)
 
 //rotas para o admin
 

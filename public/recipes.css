@@ -72,7 +72,12 @@ header{
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px /*da um espaço entre os elementos do grid*/
+    gap: 20px; /*da um espaço entre os elementos do grid*/
+}
+
+.cards a{
+    text-decoration: none;
+    color: black;
 }
 
 .card__image-container img{

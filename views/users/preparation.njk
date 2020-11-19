@@ -10,15 +10,15 @@
 
         <div class="receita">
             <div id="wrapper">
-                <img src="{{items.image}}" alt="imagem de {{items.title}}">
+                <img src="{{recipe.image}}" alt="imagem de {{recipe.title}}">
             </div>
         </div>
 
         <div class="titulo">
-            <h1>{{items.title}}</h1>
+            <h1>{{recipe.title}}</h1>
         </div>
         <div class="author">
-            <p>Por {{items.author}}</p>
+            <p>Por {{recipe.author}}</p>
         </div>
 
         <div class="ingredients">
@@ -28,7 +28,7 @@
             </div>
 
             <ul class="content show">
-                {% for ingredients in items.ingredients %}  
+                {% for ingredients in recipe.ingredients %}  
                     <li>{{ingredients}}</li>
                 {% endfor %}
             </ul>
@@ -41,7 +41,7 @@
             </div>
 
             <ul class="content show">
-                {% for preparation in items.preparation %}  
+                {% for preparation in recipe.preparation %}  
                     <li>{{preparation}}</li>
                 {% endfor %}
             </ul>
@@ -54,7 +54,7 @@
             </div>
 
             <ul class="content show">
-                <p>{{items.information}}</p>
+                <p>{{recipe.information}}</p>
             </ul>
         </div>
 

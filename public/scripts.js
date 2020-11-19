@@ -16,15 +16,17 @@ for (let [i,button] of buttons.entries()) {
 }
 
 // ===para redirecionar para a pagina da receita===
-const card = document.querySelectorAll('.cardr')
+// const card = document.querySelectorAll('.cardr')
 
-for (let i=0; i < card.length; i++) {
-    const recipe = card[i]
-    recipe.addEventListener('click', () => {
-        window.location.href = `/preparation/${i}`
-        console.log('apertei')
-    })
-}
+// for (let i=0; i < card.length; i++) {
+//     const recipe = card[i]
+//     recipe.addEventListener('click', () => {
+//         window.location.href = `/preparation/${i}`
+//         console.log('apertei')
+//     })
+// }
+
+    
 
 // ===Para fazer página atual ficar selectionada ===
 const currentPage= location.pathname

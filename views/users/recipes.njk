@@ -9,22 +9,24 @@
 
     <section class="cards">
 
-        {% for item in items %}
+        {% for recipe in recipes %}
+        <a href="/users/preparation/{{recipe.id}}">
             <div class="cardr" id="">
                 <div class="card__image-container">
-                    <img src="{{item.image}}" alt="imagem de {{item.title}}">
+                    <img src="{{recipe.image}}" alt="imagem de {{recipe.title}}">
                 </div>
                 <div class="card__content">
-                    <p>{{item.title}}</p>
+                    <p>{{recipe.title}}</p>
                 </div>
                 <div class="card__info">
-                    <p>por {{item.author}}</p>
+                    <p>por
+                        {{recipe.author}}</p>
                 </div>
             </div>
+        </a>
         {% endfor %}
 
     </section>
 
-    <script src="scripts.js"></script>
 
 {% endblock %}
