@@ -156,44 +156,30 @@ header{
     color: #777777;
 }
 
-/* ===Modal-overlay=== */
-
-.modal-overlay{
-    background-color: rgba(0,0,0, 0.7);
+/* === MODAL.ACTIVE === */
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 0; 
-    opacity: 0;
-    visibility: hidden;
-    /* toda essa parte faz um efeito de pop up escurecendo o resto da tela */
+    top: 0;
 }
 
-.modal{
-    background-color: white;
-    width: 90%;
-    height: 90%;
-    margin: 5vh auto;/* vh tira a altura de cima, também ajusta automaticamente quando diminui a tela, cria a nossa tela do popup do video*/
-    position: relative;
-} 
+.modal {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    width: 660px;
+    height: 413px;
+    margin: 355px auto;
+    position: relative;/*Position relative serve para colocar o position absolute em nossa caixa*/
+}
 
 .modal .close-modal{
     color: black;
     position: absolute;
-    right: 8px;
-    top: 8px;
-    cursor:pointer; /*faz dar efeito da mão*/
-}
-
-/* === MODAL.ACTIVE === */
-.modal-overlay.active{
-    opacity: 1;
-    visibility: visible;
-}
-
-iframe{
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
+    bottom: 0;
+    align-self:center;
 }
