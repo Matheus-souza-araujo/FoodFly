@@ -39,14 +39,18 @@
         {% endfor %}
 
     </section>
-
+{% for recipe in recipes %}
     <div class="modal-overlay">
         <div class="modal">
            <a href="" class="close-modal">
                Fechar modal
            </a> 
         </div>
+        <div class="modal-content">
+            <img src="" alt="">
+        </div>
     </div>
+{% endfor %}
 
     <script src="scripts.js"></script>
 {% endblock %}
