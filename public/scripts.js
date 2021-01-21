@@ -32,8 +32,8 @@ for (let [i,button] of buttons.entries()) {
 const currentPage= location.pathname
 const menuItens = document.querySelectorAll("header .links a")
 
-for (item of menuItens){
-    if(currentPage.includes(item.getAttribute("href"))){
+for (item of menuItens) {
+    if (currentPage.includes(item.getAttribute("href"))) {
         item.classList.add("active")
     }
 }
@@ -42,9 +42,10 @@ for (item of menuItens){
 const modalOverlay = document.querySelector('.modal-overlay')
 const cards = document.querySelectorAll('.card')//significa que você vai pegar uma coleção de objetos iguais
 
+
 for (let card of cards) {
     card.addEventListener("click", function(){
-        const imagem = card.getAttribute("img")
+        const imagem = card.querySelectorAll("img")
         modalOverlay.classList.add('active')
         modalOverlay.querySelector("img").src = `${imagem}`;
     })
