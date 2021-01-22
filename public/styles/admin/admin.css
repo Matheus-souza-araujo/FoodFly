@@ -39,3 +39,49 @@ header {
     max-width: 940px;
     margin: 50px auto 50px;
 }
+
+/* ===CARDS===*/
+
+.cardr {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.cards{
+    max-width: 940px;
+    margin:0 auto;/*alinha ao meio*/
+    margin-top: 50px;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px; /*da um espaço entre os elementos do grid*/
+}
+.cards a{
+    text-decoration: none;
+    color: black;
+}
+
+.card__image-container img {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 300px;
+    height: 140px;
+}
+
+.card__content {
+    align-items: left;
+}
+.card__content p {
+    width: 100%;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.card__info p {
+    width: 100%;
+    font-size: 14px;
+    color: #777777;
+}

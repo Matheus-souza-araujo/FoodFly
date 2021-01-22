@@ -5,7 +5,7 @@ const { json } = require('express')
 
 module.exports = {
     list(req, res){
-    return res.render("admin/index")
+    return res.render("admin/index", { recipes: data.recipes})
     },
 
     detail(req, res){

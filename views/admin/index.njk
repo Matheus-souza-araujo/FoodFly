@@ -2,12 +2,31 @@
 
 {% block content %}
 
-<div class="texto">
-    <h3>Gerenciar receitas</h3>
-</div>
+    <div class="texto">
+        <h3>Gerenciar receitas</h3>
+    </div>
 
+    <section class="cards">
 
+        {% for recipe in recipes %}
+            <a href="/users/preparation/{{recipe.id}}">
+                <div class="cardr" id="">
+                    <div class="card__image-container">
+                        <img src="{{recipe.image}}" alt="imagem de {{recipe.title}}">
+                    </div>
+                    <div class="info">
+                        <div class="card__content">
+                            <p>{{recipe.title}}</p>
+                        </div>
+                        <div class="card__info">
+                            <p>por
+                                {{recipe.author}}</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
 
+    </section>
 
 {% endblock content %}
-
