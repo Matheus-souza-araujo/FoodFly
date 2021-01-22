@@ -4,17 +4,17 @@
         <meta charset="UTF-8">
         {% block head %}
             <title>Foodfly Administrador</title>
-            <link rel="stylesheet" href="/layoutAdmin.css">
+            <link rel="stylesheet" href="/styles/admin/admin.css">
         {% endblock head %}
     </head>
 
     <body>
         <header>
-        <div class="logo">
-            <a href="/"><img src="/assets/logoAdmin.png" alt="Logo foodly fundo branco, versão administrador"></a>
-        </div>
-    </header>
+            <div class="logo">
+                <a href="/"><img src="/assets/logoAdmin.png" alt="Logo foodly fundo branco, versão administrador"></a>
+            </div>
+        </header>
 
-    {% block content %}{% endblock content %}
+        {% block content %}{% endblock content %}
     </body>
 </html>

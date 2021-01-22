@@ -13,6 +13,10 @@
     font-family: Roboto, sans-serif;
 }
 
+body {
+    background-color: white;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -28,6 +32,10 @@ header {
     margin-left: 231px;
 }
 
-body {
-    background-color:rgb(241, 235, 235) ;
+.texto {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 940px;
+    margin: 50px auto 50px;
 }

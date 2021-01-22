@@ -1,7 +1,7 @@
 //configurando as rotas
 const express = require('express')
 const routes = express.Router() //torna nossa variavel responsavél pelas rotas
-const recipes = require('./controllers/admin')
+const admin = require('./controllers/admin')
 const users = require('./controllers/users')
 //rotas usuário normal
 routes.get('/',function(req, res){
@@ -14,6 +14,9 @@ routes.get("/users/preparation/:id", users.preparation)
 
 //rotas para o admin
 
-routes.get("/admin/recipes", recipes.index); // Mostrar a lista de receitas
+routes.get("/admin/list", admin.list); // Mostrar a lista de receitas
+routes.get("/admin/detail", admin.detail); 
+routes.get("/admin/edition", admin.edit); 
+routes.get("/admin/create", admin.create); 
 
 module.exports = routes //exporta nosssas rotas
