@@ -9,22 +9,27 @@
     <section class="cards">
 
         {% for recipe in recipes %}
-            <a href="/users/preparation/{{recipe.id}}">
-                <div class="cardr" id="">
-                    <div class="card__image-container">
-                        <img src="{{recipe.image}}" alt="imagem de {{recipe.title}}">
-                    </div>
-                    <div class="info">
-                        <div class="card__content">
-                            <p>{{recipe.title}}</p>
-                        </div>
-                        <div class="card__info">
-                            <p>por
-                                {{recipe.author}}</p>
-                        </div>
-                    </div>
+            <div class="cardr" id="">
+                <div class="card__image-container">
+                    <img src="{{recipe.image}}" alt="imagem de {{recipe.title}}">
                 </div>
-            </a>
+
+                <div class="info">
+                    <div class="card__content">
+                        <p>{{recipe.title}}</p>
+                    </div>
+
+                    <div class="card__info">
+                        <p>por
+                            {{recipe.author}}</p>
+                    </div>
+
+                    <div class="card__view">
+                        <a href="/admin/detail/{{recipe.id}}">Visualizar</a>
+                    </div>
+
+                </div>
+            </div>
         {% endfor %}
 
     </section>

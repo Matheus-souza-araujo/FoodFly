@@ -2,66 +2,66 @@
 
 {% block content%}
 
-{% block head %}
-    <title>Modo de preparado</title>
-    <link rel="stylesheet" href="/styles/users//preparation.css">
-{% endblock %}
+    {% block head %}
+        <title>Modo de preparado</title>
+        <link rel="stylesheet" href="/styles/users//preparation.css">
+    {% endblock %}
 
+    <div class="receita">
+        <div id="wrapper">
+            <img src="{{recipe.image}}" alt="imagem de {{recipe.title}}">
+        </div>
+    </div>
 
-        <div class="receita">
-            <div id="wrapper">
-                <img src="{{recipe.image}}" alt="imagem de {{recipe.title}}">
-            </div>
+    <div class="titulo">
+        <h1>{{recipe.title}}</h1>
+    </div>
+    <div class="author">
+        <p>Por
+            {{recipe.author}}</p>
+    </div>
+
+    <div class="ingredients">
+        <div class="text_ingredients">
+            <h1>ingredientes</h1>
+            <a class="button">Esconder</a>
         </div>
 
-        <div class="titulo">
-            <h1>{{recipe.title}}</h1>
-        </div>
-        <div class="author">
-            <p>Por {{recipe.author}}</p>
-        </div>
+        <ul class="content show">
+            {% for ingredients in recipe.ingredients %}
+                <li>{{ingredients}}</li>
+            {% endfor %}
+        </ul>
+    </div>
 
-        <div class="ingredients">
-            <div class="text_ingredients">
-                <h1>ingredientes</h1>
-                <a class="button">Esconder</a>
-            </div>
-
-            <ul class="content show">
-                {% for ingredients in recipe.ingredients %}  
-                    <li>{{ingredients}}</li>
-                {% endfor %}
-            </ul>
+    <div class="modo">
+        <div class="text_modo">
+            <h1>Modo de preparo</h1>
+            <a class="button">Esconder</a>
         </div>
 
-        <div class="modo">
-            <div class="text_modo">
-                <h1>Modo de preparo</h1>
-                <a class="button">Esconder</a>
-            </div>
+        <ul class="content show">
+            {% for preparation in recipe.preparation %}
+                <li>{{preparation}}</li>
+            {% endfor %}
+        </ul>
+    </div>
 
-            <ul class="content show">
-                {% for preparation in recipe.preparation %}  
-                    <li>{{preparation}}</li>
-                {% endfor %}
-            </ul>
+    <div class="infos">
+        <div class="text_info">
+            <h1>Informações adicionais</h1>
+            <a class="button">Esconder</a>
         </div>
 
-        <div class="infos">
-            <div class="text_info">
-                <h1>Informações adicionais</h1>
-                <a class="button">Esconder</a>
-            </div>
-
-            <ul class="content show">
-                <p>{{recipe.information}}</p>
-            </ul>
-        </div>
+        <ul class="content show">
+            <p>{{recipe.information}}</p>
+        </ul>
+    </div>
 
     <footer>
         <p>&copy Todos os direitos reservados, receitas foodfly</p>
     </footer>
 
     <script src="/scripts.js"></script>
-    
+
 {% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layoutAdmin.njk"%}
+
+{% block content %}
+
+    {% block head %}
+        <title>Modo de preparado</title>
+        <link rel="stylesheet" href="/styles/admin/detail.css">
+    {% endblock %}
+
+    <div class="title-button">
+        <div class="receita">
+            <h1>Receita: {{recipe.title}}</h1>
+        </div>
+
+        <div class="button">
+            <a href="">Editar receita</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <img src="{{recipe.image}}" alt="">
+    </div>
+
+    <div class="title-author">
+        <div class="title">
+            <h1>{{recipe.title}}</h1>
+        </div>
+
+        <div class="author">
+            <p>por {{recipe.author}}</p>
+        </div>
+    </div>
+{% endblock content%}

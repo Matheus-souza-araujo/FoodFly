@@ -15,7 +15,7 @@ routes.get("/users/preparation/:id", users.preparation)
 //rotas para o admin
 
 routes.get("/admin/list", admin.list); // Mostrar a lista de receitas
-routes.get("/admin/detail", admin.detail); 
+routes.get("/admin/detail/:id", admin.detail); 
 routes.get("/admin/edition", admin.edit); 
 routes.get("/admin/create", admin.create); 
 
