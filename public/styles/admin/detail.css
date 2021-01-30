@@ -78,3 +78,40 @@ header {
 .wrapper img {
     border-radius: 15px;
 }
+
+.title-author {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    max-width: 940px;
+    margin: auto auto 31px;
+    text-align: center;
+    justify-content: center;
+}
+
+.title-author h1 {
+    font-size: 36px;
+    color: black;
+}
+
+.title-author p {
+    align-items: center;
+    font-size: 20px;
+    color: #777777;
+}
+
+.ingredients {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid: none;
+    gap: 20px;
+    width: 100%;
+    max-width: 940px;
+    margin: auto auto 41px;
+}
+
+.details-ingredients li {
+    font-size: 18px;
+    color: #777777;
+    line-height: 28px;
+}
