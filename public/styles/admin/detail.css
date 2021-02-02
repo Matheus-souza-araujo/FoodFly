@@ -1,6 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
 :root {
     --hearder-color: #111111 ;
+    --details-color: #777777
   }
 
 *{
@@ -97,7 +98,7 @@ header {
 .title-author p {
     align-items: center;
     font-size: 20px;
-    color: #777777;
+    color: var(--details-color);
 }
 
 .ingredients {
@@ -109,9 +110,52 @@ header {
     max-width: 940px;
     margin: auto auto 41px;
 }
+.ingredients h3 {
+    font-size: 24px;
+}
 
 .details-ingredients li {
     font-size: 18px;
-    color: #777777;
+    color: var(--details-color);
+    line-height: 28px;
+}
+
+.preparation {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid: none;
+    gap: 20px;
+    width: 100%;
+    max-width: 940px;
+    margin: auto  auto 41px;
+}
+
+.preparation h3 {
+    font-size: 24px;
+}
+
+.details-praparation li {
+    font-size: 18px;
+    color: var(--details-color);
+    line-height: 28px;
+}
+
+.information {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid: none;
+    gap: 20px;
+    width: 100%;
+    max-width: 940px;
+    margin: auto auto 51px;
+}
+
+.information h3 {
+    font-size: 24px;
+}
+
+.details-information {
+    font-size: 18px;
+    color: var(--details-color);
     line-height: 28px;
 }

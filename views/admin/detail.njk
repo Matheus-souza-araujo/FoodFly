@@ -41,6 +41,27 @@
                 <li> - {{ingredients}}</li>
             {% endfor %}
         </div>
+    </div>
 
+    <div class="preparation">
+        <div class="title-preparation">
+            <h3>Modo de preparo</h3>
+        </div>
+
+        <div class="details-praparation">
+            {% for preparation in recipe.preparation%}
+                <li> - {{preparation}}</li>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="information">
+        <div class="title-information">
+            <h3>Informações adicionais</h3>
+        </div>
+
+        <div class="details-information">
+                <p>{{recipe.information}}</p>
+        </div>
     </div>
 {% endblock content%}
