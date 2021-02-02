@@ -27,7 +27,21 @@ module.exports = {
     },
 
     edit(req, res){
-        return res.render("admin/edit")
+        const { id } = req.params
+
+        const foundRecipe = data.recipes.find(function(recipe){
+            return recipe.id == id
+        })
+
+        if (!foundRecipe){
+            return res.send("Not found recipe!")
+        }
+
+        const recipe = {
+            ...foundRecipe
+        }
+
+        return res.render("admin/edit", {recipe})
     },
 
     create(req, res){
