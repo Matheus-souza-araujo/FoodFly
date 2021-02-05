@@ -4,7 +4,7 @@ const routes = require('./routes')//pegando nossas rotas
 const server = express()
 
 
-//middlware 
+//use é um middlwares
 server.use(express.static('public'))
 server.use(routes)
 
