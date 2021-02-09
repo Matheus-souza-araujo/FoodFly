@@ -46,6 +46,10 @@ module.exports = {
 
     create(req, res){
         return res.render("admin/create")
+    },
+
+    post(req, res){
+        return res.send("Recebido")
     }
 
 

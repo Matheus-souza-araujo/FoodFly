@@ -42,3 +42,25 @@ header {
     width: 90.6px;
 
 }
+
+.title-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 940px;
+    margin: 55px auto auto;
+}
+
+.title-button h3 {
+    font-size: 24px;
+}
+
+.title-button button {
+    grid-column-end: none;
+    
+    padding: 8px 32px;
+    background: #6558C3;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
