@@ -12,6 +12,64 @@
 
             <button type="submit">Salvar receita</button>
         </div>
-        
+
+        <div class="item">
+            <div>
+                <h3>Imagem da receita</h3>
+            </div>
+            <div>
+                <input 
+                    type="url" 
+                    name="image" 
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>
+                <h3>Ingredientes</h3>
+            </div>
+            <div>
+                <input 
+                    type="text" 
+                    name="ingredients" 
+                >
+            </div>
+
+            <div class="add">
+                <a href="#">Adicionar novo ingrediente</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>
+                <h3>Modo de preparo</h3>
+            </div>
+            <div>
+                <input 
+                    type="text" 
+                    name="preparation" 
+                >
+            </div>
+
+            <div class="add">
+                <a href="#">Adicionar novo passo</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>
+                <h3>Informações de preparo</h3>
+            </div>
+            <div>
+                <input id="information"
+                    type="text" 
+                    name="information" 
+                >
+            </div>
+        </div>
+
+
+
     </form>
 {% endblock content %}
