@@ -18,43 +18,41 @@
                 <h3>Imagem da receita</h3>
             </div>
             <div>
-                <input 
-                    type="url" 
-                    name="image" 
-                >
+                <input type="url" name="image">
             </div>
         </div>
-
-        <div class="item">
+        
+        <div class="item" id="ingredients">
             <div>
                 <h3>Ingredientes</h3>
             </div>
-            <div>
+            <div class="ingredient">
                 <input 
                     type="text" 
-                    name="ingredients" 
+                    name="ingredients[]" 
+                    value=""
                 >
-            </div>
-
-            <div class="add">
-                <a href="#">Adicionar novo ingrediente</a>
             </div>
         </div>
+        <div class="button">
+            <button type="button" class="add-ingredient">Adicionar ingrediente</button>
+        </div>
+        
 
-        <div class="item">
+        <<div class="item" id="steps">
             <div>
-                <h3>Modo de preparo</h3>
+                <h3>Ingredientes</h3>
             </div>
-            <div>
+            <div class="step">
                 <input 
                     type="text" 
-                    name="preparation" 
+                    name="steps[]" 
+                    value=""
                 >
             </div>
-
-            <div class="add">
-                <a href="#">Adicionar novo passo</a>
-            </div>
+        </div>
+        <div class="button">
+            <button type="button" class="add-step">Adicionar ingrediente</button>
         </div>
 
         <div class="item">
@@ -62,14 +60,9 @@
                 <h3>Informações de preparo</h3>
             </div>
             <div>
-                <input id="information"
-                    type="text" 
-                    name="information" 
-                >
+                <input id="information" type="text" name="information">
             </div>
         </div>
-
-
-
     </form>
+    <script src="/scripts/admin/admin.js"></script>
 {% endblock content %}
