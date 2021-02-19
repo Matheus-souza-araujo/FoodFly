@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="/styles/admin/create.css">
     {% endblock %}
 
-    <form action="/admin" class="card" method="POST">
+    <form action="/admin/recipes/" class="card" method="POST">
         <div class="title-button">
             <h3>Criando receita</h3>
 
@@ -41,7 +41,7 @@
 
         <<div class="item" id="steps">
             <div>
-                <h3>Ingredientes</h3>
+                <h3>Passos</h3>
             </div>
             <div class="step">
                 <input 
@@ -60,7 +60,10 @@
                 <h3>Informações de preparo</h3>
             </div>
             <div>
-                <input id="information" type="text" name="information">
+                <textarea id="information" name="information"
+                        rows="5" cols="33">
+    
+                </textarea>
             </div>
         </div>
     </form>
