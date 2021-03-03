@@ -5,6 +5,10 @@
     {% block head %}
         <title>Detalhes da receita</title>
         <link rel="stylesheet" href="/styles/admin/edit.css">
+        <link rel="stylesheet" href="/styles/admin/admin.css">
+        <link rel="stylesheet" href="/styles/admin/create.css">
+
+
     {% endblock %}
 
     <div class="title-buttons">
@@ -21,6 +25,65 @@
             </div>
         </div>
     </div>
+
+
+    <form action="/admin/recipes/" class="card" method="POST">
+
+        <div class="item">
+            <div>
+                <h3>Imagem da receita</h3>
+            </div>
+            <div>
+                <input type="url" name="image">
+            </div>
+        </div>
+        
+        <div class="item" id="ingredients">
+            <div>
+                <h3>Ingredientes</h3>
+            </div>
+            <div class="ingredient">
+                <input 
+                    type="text" 
+                    name="ingredients[]" 
+                    value=""
+                >
+            </div>
+        </div>
+        <div class="button">
+            <button type="button" class="add-ingredient">Adicionar ingrediente</button>
+        </div>
+        
+
+        <div class="item" id="steps">
+            <div>
+                <h3>Passos</h3>
+            </div>
+            <div class="step">
+                <input 
+                    type="text" 
+                    name="steps[]" 
+                    value=""
+                >
+            </div>
+        </div>
+        <div class="button">
+            <button type="button" class="add-step">Adicionar ingrediente</button>
+        </div>
+
+        <div class="item">
+            <div>
+                <h3>Informações de preparo</h3>
+            </div>
+            <div>
+                <textarea id="information" name="information"
+                        rows="5" cols="33">
+    
+                </textarea>
+            </div>
+        </div>
+    </form>
+    <script src="/scripts/admin/admin.js"></script>
 
     
 {% endblock content %}

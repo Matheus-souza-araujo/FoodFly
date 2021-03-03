@@ -5,6 +5,7 @@
     {% block head %}
         <title>Detalhes da receita</title>
         <link rel="stylesheet" href="/styles/admin/detail.css">
+        <link rel="stylesheet" href="/styles/admin/admin.css">
     {% endblock %}
 
     <div class="title-button">
@@ -13,7 +14,7 @@
         </div>
 
         <div class="button">
-            <a href="/admin/edition/{{recipe.id}}">Editar receita</a>
+            <a href="/admin/recipes/{{recipe.id}}/edit">Editar receita</a>
         </div>
     </div>
 

@@ -4,45 +4,6 @@
     --details-color: #777777
   }
 
-*{
-    padding: 0;
-    border: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
-}
-
-body {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    display: flex;
-    align-items: center;
-
-    width: 100%;
-    background-color: var(--hearder-color);
-    height: 80px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 940px;
-    margin:auto;
-}
-
-.logo img {
-    height: 26.9px;
-    width: 90.6px;
-
-}
-
 .title-button {
     display: grid;
     grid-template-columns: 1fr 1fr;
